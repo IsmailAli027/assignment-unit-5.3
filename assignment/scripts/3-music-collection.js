@@ -70,7 +70,10 @@ function findByArtist(artist){
   // in the collection, as well as an artist you know is not in your collection. 
   // Check that for artists with multiple matches, all are found.
   
-  console.log(findByArtist('Drake'));
-  console.log(findByArtist('Biggie'));
-  console.log(findByArtist('Madonna'));
-  console.log(findByArtist('Paramore')); 
+  findByArtist('Biggie');
+  findByArtist('Morgan Wallen');
+  findByArtist('Tupac');
+  findByArtist('Bob Dylan');
+
+
+
