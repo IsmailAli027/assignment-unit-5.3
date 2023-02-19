@@ -1,5 +1,4 @@
 console.log('***** Music Collection *****')
-console.log('***** Music Collection *****')
 // - Create a variable `collection` that starts as an empty array.
 // - Add a function named `addToCollection`. This function should:
 //   - Take in the album's `title`, `artist`, `yearPublished` as input parameters
@@ -32,3 +31,18 @@ console.log(addToCollection('Riot', 'Paramore', 2013));
 console.log(addToCollection('Dangerous', 'Morgan Wallen', 2021));
 console.log(addToCollection('All Eyez on Me', 'Tupac', 1996));
 console.log('My music collection:', collection);
+
+// - Add a function named `showCollection`. This function should:
+// - Take in an array parameter. (This allows it to be reused to show any collection, 
+//like the results from the find or search.)
+// - Console.log the number of items in the array.
+// - Loop over the array and console.log each album's information formatted like: 
+//`TITLE by ARTIST, published in YEAR`.
+function showCollection(array){
+    console.log('Number of items in array:', array.length);
+    for( let i=0; i<array.length; i++)
+    console.log(array[i].title, 'by', array[i].artist, 'published in year', array[i].yearPublished);
+  }
+
+  // - Test the `showCollection` function.
+showCollection(collection);
